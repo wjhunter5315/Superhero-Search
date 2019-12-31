@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Tony Stark",
+        "alias": "Ironman",
+        "team": "Avengers"
+    },
+    {
+        "id": 2,
+        "name": "Natasha Rominoff",
+        "alias": "Black Widow",
+        "team": "Avengers"
+    },
+    {
+        "id": 3,
+        "name": "Bruce Banner",
+        "alias": "The Hulk",
+        "team": "Avengers"
+    },
+    {
+        "id": 4,
+        "name": "Steve Rogers",
+        "alias": "Captain America",
+        "team": "Avengers"
+    },
+    {
+        "id": 5,
+        "name": "Jean Grey",
+        "alias": "Phoenix",
+        "team": "X-Men"
+    },
+    {
+        "id": 6,
+        "name": "Scott Summers",
+        "alias": "Cyclops",
+        "team": "X-Men"
+    },
+    {
+        "id": 7,
+        "name": "Clarice Ferguson",
+        "alias": "Blink",
+        "team": "X-Men"
+    },
+    {
+        "id": 8,
+        "name": "Piotr Rasputin",
+        "alias": "Colossus",
+        "team": "X-Men"
+    },
+    {
+        "id": 9,
+        "name": "Matt Murdock",
+        "alias": "Daredevil",
+        "team": "Defenders"
+    },
+    {
+        "id": 10,
+        "name": "Danny Rand",
+        "alias": "Iron Fist",
+        "team": "Defender"
+    }
+]
