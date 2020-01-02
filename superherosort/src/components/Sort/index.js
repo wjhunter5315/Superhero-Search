@@ -1,9 +1,10 @@
 import React from "react";
+import "./style.css";
 
 function Sort () {
     return (
-        <div>
-            <button type="button" class="btn btn-outline-dark">Sort</button>
+        <div className="sortBtn">
+            <button type="button" className="btn btn-outline-dark">Sort</button>
         </div>
     )
 }

@@ -8,23 +8,40 @@ import heroes from "./heroes.json";
 import Wrapper from './components/Wrapper';
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.heroes to the heroes json array
   state = {
     heroes
   };
 
   removeHero = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
+    // Filter this.state.heroes for heroes with an id not equal to the id being removed
     const heroes = this.state.heroes.filter(heroes => heroes.id !== id);
-    // Set this.state.friends equal to the new friends array
+    // Set this.state.heroes equal to the new heroes array
     this.setState({ heroes });
   };
+
+  avengersFilter = team => {
+    // filter through the Heroes to only show Avengers
+        const heroes = this.state.heroes.filer(heroes => heroes.team === "Avengers");
+        this.setState({ heroes });
+    };
+    
+    xmenFilter = team => {
+        // filter through the Heroes to only show X-Men
+        const heroes = this.state.heroes.filer(heroes => heroes.team === "X-Men");
+        this.setState({ heroes });
+    };
+    
+    defendersFilter = team => {
+        // filter through the Heroes to only show Defenders
+        const heroes = this.state.heroes.filer(heroes => heroes.team === "Defenders");
+        this.setState({ heroes });
+    };
 
   render() {
     return (
       <Wrapper>
-        <Sort/>
-        <Filter/>
+       
           <div className="list-group">
             {this.state.heroes.map(heroes => (
               <Card
@@ -36,6 +53,8 @@ class App extends Component {
               />
             ))}
           </div>
+          <Sort/>
+        <Filter/>
       </Wrapper>
     )
   };
