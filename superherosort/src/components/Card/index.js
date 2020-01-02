@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css";
+import "./style.css";
 
 function Card (props) {
     return (
@@ -17,6 +17,9 @@ function Card (props) {
                     </li>
                 </ul>
             </div>
+            <span onClick={() => props.removeHero(props.id)} className="remove">
+                𝘅
+            </span>
         </div>
         
     );
