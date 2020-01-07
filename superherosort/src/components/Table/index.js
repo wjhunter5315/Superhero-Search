@@ -5,10 +5,25 @@ import "./style.css";
 // import Filter from "../Filter/index.js";
 // import heroes from "../../heroes.json";
 
-function Table() {
+function Table(props) {
     return (
-        <div>
-            
+        <div className="table table-striped">
+            <thread>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Alias</th>
+                    <th scope="col">Team</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <th scope="row"> {props.id} </th>
+                    <td> {props.name} </td>
+                    <td> {props.alias} </td>
+                    <td> {props.team} </td>
+                </tr>
+            </tbody>
         </div>
         
     )

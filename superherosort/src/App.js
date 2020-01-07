@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Table from "./components/Table";
-import Card from "./components/Card";
+import Table from "./components/Table";
+// import Card from "./components/Card";
 import Sort from "./components/Sort";
 import Filter from "./components/Filter";
 import heroes from "./heroes.json";
@@ -41,20 +41,16 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-       
-          <div className="list-group">
-            {this.state.heroes.map(heroes => (
-              <Card
-                id={heroes.id}
-                key={heroes.id}
-                name={heroes.name}
-                alias={heroes.alias}
-                team={heroes.team}
-              />
-            ))}
-          </div>
-          <Sort/>
-        <Filter/>
+          <Sort /><Filter />
+          {this.state.heroes.map(heroes => (
+            <Table
+              id={heroes.id}
+              key={heroes.id}
+              name={heroes.name}
+              alias={heroes.alias}
+              team={heroes.team}
+            />
+          ))}
       </Wrapper>
     )
   };
